@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChatGPT Read Aloud Saver by saqibabbas-code — Installation guide</title>
+<meta name="author" content="saqibabbas-code">
+<meta name="description" content="Install ChatGPT Read Aloud Saver for Chromium-based desktop browsers. Save ChatGPT Read Aloud audio locally as MP3, WAV, or the original file.">
+<style>
+:root{color-scheme:light;font-family:"Segoe UI",system-ui,sans-serif;color:#17362e;background:#eff4f1}*{box-sizing:border-box}body{margin:0;padding:48px 24px}main{max-width:940px;margin:auto}header{display:flex;gap:17px;align-items:center;padding-bottom:29px;border-bottom:1px solid #cbdcd2}header img{width:64px;height:64px}h1{font-size:30px;letter-spacing:-1px;margin:0 0 6px}header p{margin:0;color:#597165;font-size:14px}.intro{font-size:20px;line-height:1.6;max-width:730px;margin:27px 0}.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}.card{background:#fff;border:1px solid #d6e3db;border-radius:17px;padding:25px}h2{font-size:19px;letter-spacing:-.3px;margin:0 0 18px}.steps{list-style:none;padding:0;counter-reset:steps;margin:0}.steps li{counter-increment:steps;position:relative;padding-left:39px;margin:0 0 22px;font-size:14px;line-height:1.65}.steps li:last-child{margin-bottom:0}.steps li:before{content:counter(steps);position:absolute;left:0;top:1px;border-radius:50%;width:25px;height:25px;text-align:center;line-height:25px;background:#deefe5;color:#1c6a4d;font-weight:700}.steps small{display:block;color:#647b6e;font-size:12px;margin-top:4px}code{font-family:Consolas,monospace;background:#f0f5f2;border-radius:4px;padding:2px 5px;font-size:13px}.path{display:block;padding:13px;margin:13px 0 0;font-size:11px;overflow-wrap:anywhere;line-height:1.7;user-select:all}p{font-size:14px;line-height:1.75}.flow{background:#123e31;border-radius:10px;padding:17px;color:#e7fff1;line-height:1.8;font-size:16px}.flow strong{color:#a4ebc6}.note{padding:13px 15px;background:#edf5ef;border-left:3px solid #72a989;border-radius:4px;font-size:12px;line-height:1.7;color:#405e4c}.formats{display:flex;gap:7px;flex-wrap:wrap;margin:15px 0}.formats span{font-size:12px;color:#24593e;background:#ebf5ee;border:1px solid #c8decf;border-radius:20px;padding:5px 11px}a{color:#226346}footer{color:#5c7465;font-size:12px;line-height:1.7;margin-top:24px;border-top:1px solid #cbdcd2;padding-top:20px}.wide{margin-top:22px}h3{font-size:14px;margin:0 0 9px}details{font-size:13px;line-height:1.75}summary{cursor:pointer;font-weight:600}details p{font-size:13px}.tiny{font-size:12px;color:#5b7366}@media(max-width:760px){body{padding:22px 16px}.grid{grid-template-columns:1fr}h1{font-size:24px}header img{width:48px;height:48px}.intro{font-size:18px}.card{padding:21px}}@media print{body{background:#fff;padding:0}.card{break-inside:avoid}header img{display:none}}
+</style>
+</head>
+<body>
+<main>
+<header><img src="icons/icon128.png" alt=""><div><h1>ChatGPT Read Aloud Saver</h1><p>For Chromium-based desktop browsers · by <a href="https://github.com/saqibabbas-code" target="_blank" rel="noopener noreferrer">saqibabbas-code</a></p></div></header>
+<p class="tiny">Designed for Chrome, Edge, Brave and compatible Chromium desktop browsers. Firefox and Safari are not supported by this package; live browser compatibility testing remains required.</p>
+<p class="intro">Keep ChatGPT’s spoken responses as audio files you can play later or copy to your phone.</p>
+<div class="grid">
+<section class="card"><h2>Install once</h2><ol class="steps">
+<li><strong>Extract the downloaded ZIP.</strong><small>Right-click it in File Explorer → Extract All. Keep the extracted files in a permanent folder.</small></li>
+<li><strong>Open your browser’s extensions page.</strong><small>Chrome: <code>chrome://extensions</code><br>Edge: <code>edge://extensions</code><br>Brave: <code>brave://extensions</code><br>For other Chromium browsers, open their extensions manager.</small></li>
+<li><strong>Turn on Developer mode.</strong><small>Find the switch on the extensions page, then choose <strong>Load unpacked</strong>.</small></li>
+<li><strong>Select <code>chatgpt-read-aloud-saver</code>.</strong><small>Choose the inner folder directly containing <code>manifest.json</code>, then click Select Folder.</small></li>
+<li><strong>Refresh your ChatGPT tab.</strong><small>The extension begins observing new audio after the page reloads. You can pin it from your browser’s extensions menu.</small></li>
+</ol></section>
+<section class="card"><h2>Save your first response</h2><div class="flow">Play <strong>Read Aloud</strong><br>Wait for the audio player<br>Choose a format → <strong>Save audio</strong></div>
+<p>Use ChatGPT’s Read Aloud control on a response. When its audio file has fully loaded, a new player appears at the bottom right of the page.</p>
+<div class="formats"><span>MP3</span><span>WAV</span><span>Original audio</span></div>
+<p>Choose <strong>MP3</strong> for an easy-to-share file. Choose <strong>Original audio</strong> to keep the supplied file unchanged. Find your saved file in your browser’s Downloads.</p>
+<div class="note"><strong>For 7–8-minute responses:</strong> the tool allows up to 15 minutes for loading. An eight-minute MP3 at 128 kbps is about 7.7 MB. Keep the ChatGPT tab open until you save.</div>
+</section>
+</div>
+<section class="card wide"><h3>Which folder should I select?</h3><p class="tiny">Select the extracted <code>chatgpt-read-aloud-saver</code> folder. This is the folder directly containing <code>manifest.json</code>. Keep it in a permanent location so your browser can load the extension.</p><code class="path">chatgpt-read-aloud-saver/manifest.json</code></section>
+<section class="card wide"><details><summary>If the player does not appear</summary><p>Refresh ChatGPT after installing, then try Read Aloud on a short response. Previously played audio may be cached. Open the extension popup to check status. If conversion fails, try Original audio. Captured clips clear when you refresh or close the tab.</p><p>This version observes supported audio responses sent through page requests. Changes in ChatGPT’s audio delivery can prevent capture. Live signed-in ChatGPT testing in each target browser is still needed.</p></details><p class="tiny">See the <a href="README.md">full instructions</a> for limits, privacy, and troubleshooting.</p></section>
+<footer>No API key or microphone required. Audio conversion stays on your computer. This version uses the voice supplied by ChatGPT and supports individual responses. It has no separate voice selector or bulk export. Desktop use only; saved files can be transferred to your phone.<br><br>ChatGPT Read Aloud Saver by <a href="https://github.com/saqibabbas-code" target="_blank" rel="noopener noreferrer">saqibabbas-code</a> · <a href="README.md">Project overview</a><br>Independent community extension; not affiliated with OpenAI or any browser vendor. Live signed-in ChatGPT compatibility has not been verified.</footer>
+</main>
+</body>
+</html>

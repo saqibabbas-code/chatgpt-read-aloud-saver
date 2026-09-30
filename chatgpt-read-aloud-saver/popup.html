@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT Read Aloud Saver by saqibabbas-code</title>
+  <meta name="author" content="saqibabbas-code">
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><img src="icons/icon48.png" width="36" height="36" alt=""><div><h1>ChatGPT Read Aloud Saver</h1><p>For Chromium desktop browsers</p></div><span class="tag">LOCAL</span></header>
+    <section class="hero">
+      <div class="eyebrow"><span id="dot"></span><span id="status" role="status">Connecting to this tab…</span></div>
+      <div class="sound" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <h2 id="headline">Play it. Keep it.</h2>
+      <p id="hint">Play Read Aloud on a ChatGPT response. Your audio will appear here when its file is ready.</p>
+    </section>
+    <section id="download-area" aria-label="Save audio" hidden>
+      <label for="clip">Audio response</label>
+      <select id="clip"></select>
+      <div class="format-heading"><label for="format">Save as</label><span id="size"></span></div>
+      <select id="format"><option value="mp3">MP3 — easy to play and share</option><option value="original">Original — keep the supplied audio file</option><option value="wav">WAV — larger, uncompressed audio</option></select>
+      <button id="download" class="primary" type="button">↓ Save audio</button>
+      <button id="show-panel" class="secondary" type="button">Show player in ChatGPT</button>
+    </section>
+    <p id="message" class="message" role="status" hidden></p>
+    <section class="steps"><h3>Three simple steps</h3><ol><li>Open a response in <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>.</li><li>Choose <strong>Read Aloud</strong> on that response.</li><li>Click <strong>Save audio</strong> in the new player.</li></ol></section>
+    <footer><div class="brand">By <a href="https://github.com/saqibabbas-code" target="_blank" rel="noopener noreferrer">saqibabbas-code · GitHub</a></div>Uses ChatGPT’s supplied voice · No API key<br>No microphone · Audio conversion stays on your computer</footer>
+  </main>
+</body>
+</html>

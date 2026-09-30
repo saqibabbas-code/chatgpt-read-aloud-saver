@@ -1,0 +1,14 @@
+ChatGPT Read Aloud Saver includes lamejs 1.2.1, an MP3 encoder by Dmitry Zhukov and contributors, derived from LAME / jump3r.
+
+Project: https://github.com/zhuker/lamejs
+LAME: https://lame.sourceforge.net/
+Upstream package: https://registry.npmjs.org/lamejs/-/lamejs-1.2.1.tgz
+
+lame.min.js is bundled as a separate, unmodified library under the LGPL. Its upstream LICENSE is included as LAMEJS-LICENSE.txt. The complete source package is included as lamejs-1.2.1-source.tgz (including its COPYING and LICENSE files), with the release cleanup described below. You may modify or replace the library in this unpacked extension subject to its license.
+
+Source-package cleanup (2026-10-01):
+- Only package/src/main/java/mp3/LameTest.java was edited: four machine-specific path literals now use testdata/440880.wav (two occurrences), testdata/c00.wav, and generated_java.mp3. A dated source comment documents this change. These external sample fixtures were not included upstream and remain user-supplied.
+- Archive file timestamps and numeric owner/group identifiers were normalized to zero; owner/group names are blank. The gzip wrapper contains no timestamp, original filename, or comment.
+- All other source files, bundled sample data, copyright notices, and licenses retain their original contents. The runtime encoder is unchanged.
+
+The extension loads the bundled library locally. It does not load encoder code or send audio to a remote service at runtime.

@@ -1,0 +1,36 @@
+:host { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+.panel { width: 100%; padding: 16px; color: #20312e; background: #f9fcfa; border: 1px solid #d9e5df; border-radius: 18px; box-shadow: 0 12px 40px #123c3229, 0 2px 6px #123c3214; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 13px; line-height: 1.45; text-align: left; }
+.header { display: flex; align-items: center; gap: 10px; }
+.mark { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 10px; background: #dfefe7; color: #176b50; font-size: 23px; font-weight: 700; }
+.titles { flex: 1; display: grid; gap: 1px; }
+.titles strong { font-size: 14px; font-weight: 650; }
+.titles span { color: #697a72; font-size: 11px; }
+button, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, select:focus-visible { outline: 3px solid #7bc9ad; outline-offset: 2px; }
+.dismiss { border: 0; width: 30px; height: 30px; background: transparent; color: #63776d; border-radius: 8px; font-size: 23px; }
+.dismiss:hover { background: #eaf2ee; }
+#ras-status { margin: 14px 0 10px; font-size: 12px; }
+#ras-status.error { color: #a03832; }
+audio { display: block; width: 100%; height: 36px; margin: 9px 0 12px; }
+select { min-width: 0; max-width: 100%; height: 37px; border: 1px solid #ccdbd2; border-radius: 8px; padding: 0 8px; background: #fff; color: #32483d; }
+#ras-clips { width: 100%; margin-bottom: 8px; font-size: 11px; }
+.download-row { display: flex; gap: 8px; }
+#ras-format { width: 122px; font-size: 12px; }
+#ras-download { flex: 1; border: 0; border-radius: 8px; padding: 0 10px; background: #176b50; color: white; font-size: 12px; font-weight: 650; }
+#ras-download:hover { background: #11593f; }
+button:disabled, select:disabled { cursor: wait; opacity: .55; }
+.footnote { margin: 12px 0 0; color: #6f7f76; font-size: 10px; line-height: 1.5; }
+@media (prefers-color-scheme: dark) {
+  :host { color-scheme: dark; }
+  .panel { background: #202a26; color: #eff6f1; border-color: #415348; }
+  .titles span, .footnote { color: #abbcaf; }
+  .mark { background: #304b3b; color: #9edcba; }
+  .dismiss { color: #b4c9bc; }
+  .dismiss:hover { background: #35463c; }
+  select { background: #2d3932; color: #eaf4ed; border-color: #4b6052; }
+  #ras-status.error { color: #ffb4ae; }
+  #ras-download { background: #24875f; }
+}
